@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>https://wildmeshing.github.io/</loc>
+     <lastmod>2019-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wildmeshing.github.io/tetwild/</loc>
+     <lastmod>2019-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wildmeshing.github.io/triwild/</loc>
+     <lastmod>2019-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wildmeshing.github.io/python/</loc>
+     <lastmod>2019-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://wildmeshing.github.io/wildmeshing-notebook/</loc>
+     <lastmod>2019-07-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
