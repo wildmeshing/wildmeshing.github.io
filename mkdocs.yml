@@ -1,6 +1,6 @@
-site_name: Origanization for TetWild and TriWild codes
+site_name: Fast robust meshing
 site_url: 'https://wildmeshing.github.io/'
-repo_name: 'geometryprocessing/geometric-computing-python'
+repo_name: 'wildmeshing'
 repo_url: 'https://github.com/wildmeshing/wildmeshing-python'
 edit_uri: '../https://github.com/wildmeshing/wildmeshing-python/edit/docs/docs/'
 site_description: "Fast robust meshing"
@@ -13,8 +13,8 @@ theme:
   logo:
     icon: ' '
   palette:
-    primary: 'light black'
-    accent: 'black'
+    primary: 'lime'
+    accent: 'lime'
 extra:
   social:
     - type: 'github'
@@ -58,5 +58,5 @@ nav:
   - TetWild: tetwild.md
   - TriWild: triwild.md
   - Python:
-    - Python: python.md
+    - Home: python.md
     - Notebook: wildmeshing-notebook.ipynb
