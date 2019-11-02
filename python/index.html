@@ -286,9 +286,111 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Home
+      </label>
+    
     <a href="./" title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" title="Documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-based-api" title="File based API" class="md-nav__link">
+    File based API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numpy-based-api" title="numpy based API" class="md-nav__link">
+    numpy based API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples_1" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-options" title="Common options" class="md-nav__link">
+    Common options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#triangulation" title="Triangulation" class="md-nav__link">
+    Triangulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tetrahedralization-alpha" title="Tetrahedralization (alpha)" class="md-nav__link">
+    Tetrahedralization (alpha)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -327,6 +429,95 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" title="Documentation" class="md-nav__link">
+    Documentation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-based-api" title="File based API" class="md-nav__link">
+    File based API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#numpy-based-api" title="numpy based API" class="md-nav__link">
+    numpy based API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples_1" title="Examples:" class="md-nav__link">
+    Examples:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-options" title="Common options" class="md-nav__link">
+    Common options
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#triangulation" title="Triangulation" class="md-nav__link">
+    Triangulation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tetrahedralization-alpha" title="Tetrahedralization (alpha)" class="md-nav__link">
+    Tetrahedralization (alpha)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -349,6 +540,74 @@
 </pre></div></p>
 <p><a href="https://github.com/wildmeshing/wildmeshing-python/blob/master/examples/tutorial.ipynb">Jupyter Notebook</a></p>
 <p><a href="https://mybinder.org/v2/gh/wildmeshing/wildmeshing-python/master?filepath=examples%2Ftutorial.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
+<p>It has 4 main functions:</p>
+<ul>
+<li><code class="codehilite">tetrahedralize</code></li>
+<li><code class="codehilite">triangulate</code></li>
+<li><code class="codehilite">triangulate_data</code></li>
+<li><code class="codehilite">triangulate_svg</code></li>
+</ul>
+<p>and an unique import
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">wildmeshing</span> <span class="kn">as</span> <span class="nn">wm</span>
+</pre></div></p>
+<h3 id="file-based-api">File based API<a class="headerlink" href="#file-based-api" title="Permanent link">&para;</a></h3>
+<p><code class="codehilite">tetrahedralize</code> and <code class="codehilite">triangulate</code> takes as input a path and write the output to a file using these parameters</p>
+<ul>
+<li><code class="codehilite">input</code>:  Input segments in .obj format (for <code class="codehilite">triangulate</code>) and input surface mesh in .off/.obj/.stl/.ply format (for <code class="codehilite">tetrahedralize</code>).</li>
+<li><code class="codehilite">feature_input</code> default &ldquo;&rdquo;: Input feature json file (only for <code class="codehilite">triangulate</code>)</li>
+<li><code class="codehilite">output</code>, default &ldquo;&rdquo;: output path</li>
+</ul>
+<p><code class="codehilite">triangulate_svg</code> reads an SVG and returns <code class="codehilite">numpy</code> arrays:</p>
+<ul>
+<li><code class="codehilite">svg_path</code>: Path for the input SVG file</li>
+</ul>
+<h4 id="examples">Examples:<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<p>High-order triangulating an SVG:
+<div class="codehilite"><pre><span></span><span class="n">V</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">nodes</span><span class="p">,</span> <span class="n">F_nodes</span> <span class="o">=</span> <span class="n">wm</span><span class="o">.</span><span class="n">triangulate_svg</span><span class="p">(</span><span class="s2">&quot;rocket.svg&quot;</span><span class="p">,</span> <span class="n">cut_outside</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">hole_pts</span><span class="o">=</span><span class="p">[[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">165</span><span class="p">]])</span>
+</pre></div></p>
+<p>Tetrahedralizing an input triangle soup:
+<div class="codehilite"><pre><span></span><span class="n">wm</span><span class="o">.</span><span class="n">tetrahedralize</span><span class="p">(</span><span class="s2">&quot;small.stl&quot;</span><span class="p">,</span> <span class="s2">&quot;out.msh&quot;</span><span class="p">)</span>
+</pre></div></p>
+<h3 id="numpy-based-api"><code class="codehilite">numpy</code> based API<a class="headerlink" href="#numpy-based-api" title="Permanent link">&para;</a></h3>
+<p><code class="codehilite">triangulate_data</code> uses <code class="codehilite">numpy</code> arrays as input and output:</p>
+<ul>
+<li><code class="codehilite">V</code>: Input vertices</li>
+<li><code class="codehilite">E</code>: Input edges</li>
+<li><code class="codehilite">feature_info</code>, default <code class="codehilite">none</code>: Json string containing the features</li>
+</ul>
+<h4 id="examples_1">Examples:<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h4>
+<p>Triangulating vertex and edges:</p>
+<div class="codehilite"><pre><span></span><span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">...</span><span class="p">])</span>
+<span class="n">L</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">...</span><span class="p">])</span>
+
+<span class="n">vs</span><span class="p">,</span> <span class="n">tris</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">wm</span><span class="o">.</span><span class="n">triangulate</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">cut_outside</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+<h2 id="common-options">Common options<a class="headerlink" href="#common-options" title="Permanent link">&para;</a></h2>
+<p>All function have a common list of parameters:</p>
+<ul>
+<li><code class="codehilite">stop_quality</code>, default -1: Specify max AMIPS energy for stopping mesh optimization</li>
+<li><code class="codehilite">max_its</code>, default 80: Max number of mesh optimization iterations</li>
+<li><code class="codehilite">stage</code>, default 1 in 2D and 2 in 3D: Specify envelope stage</li>
+<li><code class="codehilite">epsilon</code>, default -1: Relative envelope <span><span class="MathJax_Preview">\epsilon_r</span><script type="math/tex">\epsilon_r</script></span>. Absolute <span><span class="MathJax_Preview">\epsilon = \epsilon_r \cdot d</span><script type="math/tex">\epsilon = \epsilon_r \cdot d</script></span>, where <span><span class="MathJax_Preview">d</span><script type="math/tex">d</script></span> is the diagonal of the bounding box</li>
+<li><code class="codehilite">edge_length_r</code>, default 1/20: Relative target edge length <span><span class="MathJax_Preview">\ell_r</span><script type="math/tex">\ell_r</script></span>. Absolute <span><span class="MathJax_Preview">\ell=\ell_r \cdot d</span><script type="math/tex">\ell=\ell_r \cdot d</script></span>,  where <span><span class="MathJax_Preview">d</span><script type="math/tex">d</script></span> is the diagonal of the bounding box</li>
+<li><code class="codehilite">mute_log</code>, default false: Mute prints</li>
+</ul>
+<h3 id="triangulation">Triangulation<a class="headerlink" href="#triangulation" title="Permanent link">&para;</a></h3>
+<p>The 2D meshing supports high order, therefore it has these additional options:</p>
+<ul>
+<li><code class="codehilite">feature_epsilon</code>, default 1e-3: Relative feature envelope mu_r. Absolute mu, default mu_r * diagonal_of_bbox (only for <code class="codehilite">triangulate</code>)</li>
+<li><code class="codehilite">flat_feature_angle</code>, default 10: Desired minimal angle</li>
+<li><code class="codehilite">cut_outside</code>, default false: Remove &ldquo;outside part&rdquo;</li>
+<li><code class="codehilite">skip_eps</code>, default false: Skip saving eps</li>
+<li><code class="codehilite">hole_file</code>, default &ldquo;&rdquo;: Input a .xyz file for specifying points inside holes you want to remove</li>
+</ul>
+<h3 id="tetrahedralization-alpha">Tetrahedralization (alpha)<a class="headerlink" href="#tetrahedralization-alpha" title="Permanent link">&para;</a></h3>
+<p>The tetrahedralization part is still under developement, for the moment it supports only files as input and output. Since it is more costly and complicated it has an additional input:</p>
+<ul>
+<li><code class="codehilite">skip_simplify</code>, default false: Skips the mesh simplification</li>
+</ul>
                 
                   
                 
