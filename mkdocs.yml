@@ -38,8 +38,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       repo_url_shorthand: true
       repo_url_shortener: true
-      user: polyfem
-      repo: polyfem
+      user: wildmeshing
+      repo: wildmeshing
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
