@@ -38,8 +38,8 @@ import wildmeshing as wm
 `tetrahedralize` and `triangulate` takes as input a path and write the output to a file using these parameters
 
 - `input`:  Input segments in .obj format (for `triangulate`) and input surface mesh in .off/.obj/.stl/.ply format (for `tetrahedralize`).
-- `feature_input` default "": Input feature json file (only for `triangulate`)
-- `output`, default "": output path
+- `feature_input` default `""`: Input feature json file (only for `triangulate`)
+- `output`, default `""`: output path
 
 
 `triangulate_svg` reads an SVG and returns `numpy` arrays:
@@ -106,9 +106,14 @@ The 2D meshing supports high order, therefore it has these additional options:
 
 
 
-### Tetrahedralization (alpha)
+### Tetrahedralization
 
 
-The tetrahedralization part is still under developement, for the moment it supports only files as input and output. Since it is more costly and complicated it has an additional input:
+Since it is more costly and complicated we have now a statefull version
 
-- `skip_simplify`, default false: Skips the mesh simplification
+```python
+tetra = wm.Tetrahedralizer(stop_quality=1000)
+tetra.set_mesh(V, F)
+tetra.tetrahedralize()
+VT, TT = tetra.get_tet_mesh()
+```

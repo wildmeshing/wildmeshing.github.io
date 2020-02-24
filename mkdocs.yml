@@ -56,6 +56,7 @@ extra_javascript:
 nav:
   - Home: index.md
   - TetWild: tetwild.md
+  - fTetWild: ftetwild.md
   - TriWild: triwild.md
   - Python:
     - Home: python.md
