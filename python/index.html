@@ -245,6 +245,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../ftetwild/" title="fTetWild" class="md-nav__link">
+      fTetWild
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../triwild/" title="TriWild" class="md-nav__link">
       TriWild
     </a>
@@ -260,13 +272,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Python
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         Python
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -373,8 +385,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tetrahedralization-alpha" title="Tetrahedralization (alpha)" class="md-nav__link">
-    Tetrahedralization (alpha)
+  <a href="#tetrahedralization" title="Tetrahedralization" class="md-nav__link">
+    Tetrahedralization
   </a>
   
 </li>
@@ -501,8 +513,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tetrahedralization-alpha" title="Tetrahedralization (alpha)" class="md-nav__link">
-    Tetrahedralization (alpha)
+  <a href="#tetrahedralization" title="Tetrahedralization" class="md-nav__link">
+    Tetrahedralization
   </a>
   
 </li>
@@ -555,8 +567,8 @@
 <p><code class="codehilite">tetrahedralize</code> and <code class="codehilite">triangulate</code> takes as input a path and write the output to a file using these parameters</p>
 <ul>
 <li><code class="codehilite">input</code>:  Input segments in .obj format (for <code class="codehilite">triangulate</code>) and input surface mesh in .off/.obj/.stl/.ply format (for <code class="codehilite">tetrahedralize</code>).</li>
-<li><code class="codehilite">feature_input</code> default &ldquo;&rdquo;: Input feature json file (only for <code class="codehilite">triangulate</code>)</li>
-<li><code class="codehilite">output</code>, default &ldquo;&rdquo;: output path</li>
+<li><code class="codehilite">feature_input</code> default <code class="codehilite">&quot;&quot;</code>: Input feature json file (only for <code class="codehilite">triangulate</code>)</li>
+<li><code class="codehilite">output</code>, default <code class="codehilite">&quot;&quot;</code>: output path</li>
 </ul>
 <p><code class="codehilite">triangulate_svg</code> reads an SVG and returns <code class="codehilite">numpy</code> arrays:</p>
 <ul>
@@ -603,11 +615,13 @@
 <li><code class="codehilite">skip_eps</code>, default false: Skip saving eps</li>
 <li><code class="codehilite">hole_file</code>, default &ldquo;&rdquo;: Input a .xyz file for specifying points inside holes you want to remove</li>
 </ul>
-<h3 id="tetrahedralization-alpha">Tetrahedralization (alpha)<a class="headerlink" href="#tetrahedralization-alpha" title="Permanent link">&para;</a></h3>
-<p>The tetrahedralization part is still under developement, for the moment it supports only files as input and output. Since it is more costly and complicated it has an additional input:</p>
-<ul>
-<li><code class="codehilite">skip_simplify</code>, default false: Skips the mesh simplification</li>
-</ul>
+<h3 id="tetrahedralization">Tetrahedralization<a class="headerlink" href="#tetrahedralization" title="Permanent link">&para;</a></h3>
+<p>Since it is more costly and complicated we have now a statefull version</p>
+<div class="codehilite"><pre><span></span><span class="n">tetra</span> <span class="o">=</span> <span class="n">wm</span><span class="o">.</span><span class="n">Tetrahedralizer</span><span class="p">(</span><span class="n">stop_quality</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">tetra</span><span class="o">.</span><span class="n">set_mesh</span><span class="p">(</span><span class="n">V</span><span class="p">,</span> <span class="n">F</span><span class="p">)</span>
+<span class="n">tetra</span><span class="o">.</span><span class="n">tetrahedralize</span><span class="p">()</span>
+<span class="n">VT</span><span class="p">,</span> <span class="n">TT</span> <span class="o">=</span> <span class="n">tetra</span><span class="o">.</span><span class="n">get_tet_mesh</span><span class="p">()</span>
+</pre></div>
                 
                   
                 
