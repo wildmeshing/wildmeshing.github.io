@@ -1,3 +1,6 @@
 *msh*
 
 site
+csg_input
+__*.stl
+*checkpoint*
