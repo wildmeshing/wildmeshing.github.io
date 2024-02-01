@@ -72,10 +72,10 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 plugins:
-  - mknotebooks:
-      execute: true
-      preamble: "doc/plot_to_md.py"
-      timeout: -1
+  # - mknotebooks:
+  #     execute: true
+  #     preamble: "doc/plot_to_md.py"
+  #     timeout: -1
   - git-revision-date
   - search
   - mkdocs-jupyter:
@@ -98,4 +98,4 @@ nav:
   - TriWild: triwild.md
   - Python:
     - Home: python.md
-    - Notebook: wildmeshing-notebook.ipynb
+    # - Notebook: wildmeshing-notebook.ipynb
