@@ -5,3 +5,4 @@ mkdocs-git-revision-date-plugin
 jupyter_contrib_nbextensions
 mkdocs-include-markdown-plugin
 mknotebooks
+jupyter
