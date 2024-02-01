@@ -2,7 +2,8 @@ import glob
 import subprocess
 import os
 
-toolkit_path = "./toolkit"
+
+toolkit_path = f"{os.getcwd()}/toolkit"
 
 
 includes = [f"{toolkit_path}/components"]
