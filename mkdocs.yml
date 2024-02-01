@@ -1,24 +1,45 @@
 site_name: Fast robust meshing
 site_url: 'https://wildmeshing.github.io/'
 repo_name: 'wildmeshing'
-repo_url: 'https://github.com/wildmeshing/wildmeshing-python'
-edit_uri: '../https://github.com/wildmeshing/wildmeshing-python/edit/docs/docs/'
+repo_url: 'https://github.com/wildmeshing/wildmeshing-toolkit'
+edit_uri: '../https://github.com/wildmeshing/wildmeshing-toolkit/edit/docs/docs/'
 site_description: "Fast robust meshing"
 # strict: true
 docs_dir: 'doc'
-remote_branch: 'master'
+remote_branch: 'main'
 theme:
   name: material
+  custom_dir: 'docs/theme'
   favicon: 'favicon.ico'
-  logo:
-    icon: ' '
-  palette:
-    primary: 'lime'
-    accent: 'lime'
+  icon:
+    logo: material/library
+    repo: fontawesome/brands/github
+palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: "cyan"
+      accent: "indigo"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: "blue"
+      accent: "deep purple"
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+features:
+  - navigation.tabs
+  - navigation.expand
+  - search.suggest
+  - search.highlight
 extra:
   social:
-    - type: 'github'
-      link: 'https://github.com/wildmeshing/wildmeshing-python'
+    - icon: fontawesome/brands/github
+      link: 'https://github.com/wildmeshing/wildmeshing-toolkit'
+extra_css:
+  - theme/extra.css
 markdown_extensions:
   - codehilite
   - footnotes
@@ -28,7 +49,8 @@ markdown_extensions:
   - markdown.extensions.smarty
   - markdown.extensions.toc:
       permalink: true
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
@@ -46,15 +68,31 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.extra
+  - pymdownx.tabbed:
+      alternate_style: true
 plugins:
   - mknotebooks:
       execute: true
       preamble: "doc/plot_to_md.py"
       timeout: -1
+  - git-revision-date
+  - search
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+      include_source: True
+  - include-markdown
 extra_javascript:
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
   - Home: index.md
+  - Toolkit:
+    - Home: toolkit.md
+    - Json: json_defaults_and_spec.md
+    - Docs: https://wildmeshing.github.io/wildmeshing-toolkit/index.html
   - TetWild: tetwild.md
   - fTetWild: ftetwild.md
   - TriWild: triwild.md
