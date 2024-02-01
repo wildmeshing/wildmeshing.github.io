@@ -4,6 +4,7 @@ import os
 
 
 toolkit_path = f"{os.getcwd()}/toolkit"
+toolkit_path = f"{os.getcwd()}/../wildmeshing-toolkit"
 
 
 includes = [f"{toolkit_path}/components"]
@@ -11,12 +12,12 @@ for f in glob.glob(f"{toolkit_path}/components/wmtk_components/*", recursive=Tru
     name = os.path.basename(f)
     includes.append(f"{f}/wmtk/components/{name}")
 
-command = ["python", "./json-spec-engine/docs/spec2html.py", "-i", f"{toolkit_path}/components/wmtk_components/main/wmtk/components/components.json", "--include-dirs"]
+command = ["python", "../json-spec-engine/docs/spec2html.py", "-i", f"{toolkit_path}/components/wmtk_components/main/wmtk/components/components.json", "--include-dirs"]
 command += includes
 command += ["-o", "./doc/_json_spec.md"]
 subprocess.run(command)
 
-command = ["python", "./json-spec-engine/scripts/generate_defaults.py", "-i", f"{toolkit_path}/components/wmtk_components/main/wmtk/components/components.json", "--include-dirs"]
+command = ["python", "../json-spec-engine/scripts/generate_defaults.py", "-i", f"{toolkit_path}/components/wmtk_components/main/wmtk/components/components.json", "--include-dirs"]
 command += includes
-command  = ["-o", "./doc/_json_defaults.json"]
+command += ["-o", "./doc/_json_defaults.json"]
 subprocess.run(command)
