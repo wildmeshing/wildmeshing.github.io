@@ -1,0 +1,19 @@
+{
+    "delaunay": "REQUIRED!",
+    "export_cache": "REQUIRED!",
+    "fusion": "REQUIRED!",
+    "get_all_meshes": "REQUIRED!",
+    "import_cache": "REQUIRED!",
+    "input": "REQUIRED!",
+    "isotropic_remeshing": "REQUIRED!",
+    "marching": "REQUIRED!",
+    "mesh_info": "REQUIRED!",
+    "multimesh": "REQUIRED!",
+    "output": "REQUIRED!",
+    "procedural": "REQUIRED!",
+    "regular_space": "REQUIRED!",
+    "tag_intersection": "REQUIRED!",
+    "to_points": "REQUIRED!",
+    "triangle_insertion": "REQUIRED!",
+    "wildmeshing": "REQUIRED!"
+}
