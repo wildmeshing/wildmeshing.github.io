@@ -33,8 +33,8 @@ jobs:
 
       - name: Generate JSON Spec Documentation
         run: |
-          git clone --depth=1 https://github.com/wildmeshing/wildmeshing-toolkit.git toolkit
-          git clone --depth=1 https://github.com/geometryprocessing/json-spec-engine.git
+          git clone https://github.com/wildmeshing/wildmeshing-toolkit.git toolkit
+          git clone https://github.com/geometryprocessing/json-spec-engine.git
           pip install -r ./json-spec-engine/requirements.txt
           pwd
           ls /home/runner/work/wildmeshing.github.io/wildmeshing.github.io/toolkit/components/wmtk_components/main/wmtk/components
