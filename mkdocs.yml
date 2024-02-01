@@ -2,14 +2,14 @@ site_name: Fast robust meshing
 site_url: 'https://wildmeshing.github.io/'
 repo_name: 'wildmeshing'
 repo_url: 'https://github.com/wildmeshing/wildmeshing-toolkit'
-edit_uri: '../https://github.com/wildmeshing/wildmeshing-toolkit/edit/docs/docs/'
+edit_uri: '../https://github.com/wildmeshing/wildmeshing-toolkit/edit/doc/doc/'
 site_description: "Fast robust meshing"
 # strict: true
 docs_dir: 'doc'
 remote_branch: 'main'
 theme:
   name: material
-  custom_dir: 'docs/theme'
+  custom_dir: 'doc/theme'
   favicon: 'favicon.ico'
   icon:
     logo: material/library
