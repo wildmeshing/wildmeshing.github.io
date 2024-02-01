@@ -14,7 +14,7 @@ theme:
   icon:
     logo: material/library
     repo: fontawesome/brands/github
-palette:
+  palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: "cyan"
@@ -29,11 +29,11 @@ palette:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-features:
-  - navigation.tabs
-  - navigation.expand
-  - search.suggest
-  - search.highlight
+  features:
+    - navigation.tabs
+    - navigation.expand
+    - search.suggest
+    - search.highlight
 extra:
   social:
     - icon: fontawesome/brands/github
