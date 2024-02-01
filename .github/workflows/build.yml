@@ -36,6 +36,7 @@ jobs:
           git clone --depth=1 https://github.com/wildmeshing/wildmeshing-toolkit.git toolkit
           git clone --depth=1 https://github.com/geometryprocessing/json-spec-engine.git
           pip install -r ./json-spec-engine/requirements.txt
+          ls
           python generate_doc.py
           cp ./toolkit/LICENSE ./toolkit/_license.txt
 
