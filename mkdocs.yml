@@ -1,16 +1,16 @@
 site_name: Fast robust meshing
-site_url: 'https://wildmeshing.github.io/'
-repo_name: 'wildmeshing'
-repo_url: 'https://github.com/wildmeshing/wildmeshing-toolkit'
-edit_uri: '../https://github.com/wildmeshing/wildmeshing-toolkit/edit/doc/doc/'
+site_url: "https://wildmeshing.github.io/"
+repo_name: "wildmeshing"
+repo_url: "https://github.com/wildmeshing/wildmeshing-toolkit"
+edit_uri: "../https://github.com/wildmeshing/wildmeshing-toolkit/edit/doc/doc/"
 site_description: "Fast robust meshing"
 # strict: true
-docs_dir: 'doc'
-remote_branch: 'main'
+docs_dir: "doc"
+remote_branch: "main"
 theme:
   name: material
-  custom_dir: 'doc/theme'
-  favicon: 'favicon.ico'
+  custom_dir: "doc/theme"
+  favicon: "favicon.ico"
   icon:
     logo: material/library
     repo: fontawesome/brands/github
@@ -37,7 +37,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: 'https://github.com/wildmeshing/wildmeshing-toolkit'
+      link: "https://github.com/wildmeshing/wildmeshing-toolkit"
 extra_css:
   - theme/extra.css
 markdown_extensions:
@@ -90,12 +90,19 @@ extra_javascript:
 nav:
   - Home: index.md
   - Toolkit:
-    - Home: toolkit.md
-    - Json: json_defaults_and_spec.md
-    - Docs: https://wildmeshing.github.io/wildmeshing-toolkit/index.html
+      - Home: toolkit.md
+      - Shortest Edge Collapse: toolkit_specs/shortest_edge_collapse_spec.md
+      - QSLIM: toolkit_specs/qslim_spec.md
+      - Isotropic Remeshing: toolkit_specs/isotropic_remeshing_spec.md
+      - TetWild: toolkit_specs/tetwild_spec.md
+      - TriWild: toolkit_specs/triwild_spec.md
+      - Topological Offset: toolkit_specs/topological_offset_spec.md
+      - Image Simulation: toolkit_specs/image_simulation_spec.md
+      - Manifold Extraction: toolkit_specs/manifold_extraction_spec.md
+      - Docs: https://wildmeshing.github.io/wildmeshing-toolkit/index.html
   - TetWild: tetwild.md
   - fTetWild: ftetwild.md
   - TriWild: triwild.md
   - Python:
-    - Home: python.md
+      - Home: python.md
     # - Notebook: wildmeshing-notebook.ipynb
