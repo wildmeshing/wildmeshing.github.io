@@ -89,15 +89,15 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
   - Home: index.md
-  - Toolkit:
-      - Home: toolkit.md
+  - Wildmeshing:
+      - Home: wildmeshing.md
       - Shortest Edge Collapse: toolkit_specs/shortest_edge_collapse_spec.md
       - QSLIM: toolkit_specs/qslim_spec.md
       - Isotropic Remeshing: toolkit_specs/isotropic_remeshing_spec.md
       - TetWild: toolkit_specs/tetwild_spec.md
       - TriWild: toolkit_specs/triwild_spec.md
+      - SimWild: toolkit_specs/simwild_spec.md
       - Topological Offset: toolkit_specs/topological_offset_spec.md
-      - Image Simulation: toolkit_specs/image_simulation_spec.md
       - Manifold Extraction: toolkit_specs/manifold_extraction_spec.md
       - Docs: https://wildmeshing.github.io/wildmeshing-toolkit/index.html
   - TetWild: tetwild.md
