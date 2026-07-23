@@ -1,0 +1,19 @@
+{
+    "DEBUG_output": false,
+    "DEBUG_sanity_checks": false,
+    "application": "REQUIRED!",
+    "eps_rel": 0.002,
+    "input": "REQUIRED!",
+    "input_dir": "",
+    "input_names": [],
+    "length_rel": 0.05,
+    "log_file": "",
+    "max_iterations": 80,
+    "num_threads": 0,
+    "output": "out",
+    "preserve_topology": false,
+    "report": "",
+    "stop_energy": 10,
+    "throw_on_fail": false,
+    "write_vtu": false
+}

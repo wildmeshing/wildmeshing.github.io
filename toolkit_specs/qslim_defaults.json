@@ -1,0 +1,13 @@
+{
+    "application": "REQUIRED!",
+    "eps_rel": -1,
+    "input": "REQUIRED!",
+    "input_dir": "",
+    "log_file": "",
+    "num_threads": 0,
+    "output": "out.obj",
+    "report": "",
+    "target_abs": -1,
+    "target_rel": 0.1,
+    "throw_on_fail": false
+}

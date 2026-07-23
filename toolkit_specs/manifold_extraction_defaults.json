@@ -1,0 +1,15 @@
+{
+    "DEBUG_output": false,
+    "application": "REQUIRED!",
+    "fill_tags": [],
+    "input": "REQUIRED!",
+    "input_dir": "",
+    "log_file": "",
+    "output": "out",
+    "radius": -1.0,
+    "radius_rel": 0.01,
+    "report": "",
+    "save_vtu": false,
+    "tag_selection": "tag_0",
+    "write_surface": false
+}
