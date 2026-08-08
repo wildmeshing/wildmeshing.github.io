@@ -1,0 +1,24 @@
+{
+    "DEBUG_output": false,
+    "application": "REQUIRED!",
+    "check_manifoldness": true,
+    "edge_search_termination_len": 0.001,
+    "input": "REQUIRED!",
+    "input_dir": "",
+    "log_file": "",
+    "offset_in": false,
+    "offset_out": true,
+    "offset_output_tags": [
+        "newtag"
+    ],
+    "offset_selection": "!_",
+    "output": "out",
+    "protected_tags": [],
+    "relative_ball_threshold": 0.1,
+    "report": "",
+    "respect_all_topologies": false,
+    "save_vtu": false,
+    "sorted_marching": false,
+    "target_distance": -1.0,
+    "target_distance_rel": 0.01
+}
