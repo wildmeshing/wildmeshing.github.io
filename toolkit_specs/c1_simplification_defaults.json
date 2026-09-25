@@ -1,0 +1,8 @@
+{
+    "application": "REQUIRED!",
+    "dofs": "REQUIRED!",
+    "output": "out",
+    "surface_mesh": "REQUIRED!",
+    "tet_mesh": "REQUIRED!",
+    "uv_mesh": "REQUIRED!"
+}
