@@ -2,7 +2,8 @@
 
 _Robust 2d and 3d meshing package_
 
-Check [Wildmeshing Toolkit](toolkit.md) for our open-source C++ robust toolkit.
+Check the [Wildmeshing Toolkit](https://wildmeshing.github.io/wildmeshing-toolkit/) for our open-source C++ robust toolkit, with its
+Python package: tutorials, examples and the reference of every component.
 
 ![](teaser.png)
 Check [TetWild](tetwild.md) and [fTetwild](ftetwild.md) for our open-source C++ robust tet-mesher.
