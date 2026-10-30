@@ -4,8 +4,7 @@
 
 ### Prerequisites
 
-- CMake 3.10 or higher
-- A C++17 compatible compiler
+- Python 3
 - Git
 
 ### Build Steps
@@ -13,8 +12,8 @@
 #### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/wildmeshing/wildmeshing.git
-cd wildmeshing
+git clone -b doc https://github.com/wildmeshing/wildmeshing.github.io.git
+cd wildmeshing.github.io
 ```
 
 #### 2. Install requirements:
@@ -23,13 +22,7 @@ cd wildmeshing
 pip install -r requirements.txt
 ```
 
-#### 3. Generate MD files from JSON files:
-
-```bash
-TODO
-```
-
-#### 4. Preview the documentation locally:
+#### 3. Preview the documentation locally:
 
 ```bash
 mkdocs serve
@@ -41,6 +34,8 @@ or
 python -m mkdocs serve
 ```
 
-## Adding a new component to the toolkit
+## The Wildmeshing Toolkit's documentation
 
-Every component is expected to have a `"${component_name}_spec.json"` file in the `wildmeshing-toolkit/components` directory. The `generate_doc.py` script will automatically generate the corresponding markdown file in the `doc/toolkit_specs` directory. The generated markdown must be added manually to the `mkdocs.yml` file in order to be included in the documentation.
+The toolkit's documentation, including the reference generated from its components'
+`*_spec.json` files, is built from the toolkit's own repository (`docs/`, `mkdocs.yml`) and
+published at https://wildmeshing.github.io/wildmeshing-toolkit/. This site links to it.

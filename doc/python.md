@@ -1,6 +1,12 @@
 Wildmeshing
 ===========
 
+!!! note "wildmeshing-python 0.4"
+    This page documents [wildmeshing-python](https://github.com/wildmeshing/wildmeshing-python),
+    the Python bindings of TetWild and TriWild on conda-forge and PyPI as `wildmeshing` 0.4. The
+    [Wildmeshing Toolkit](https://wildmeshing.github.io/wildmeshing-toolkit/) has its own Python package, to be released under the same name,
+    with every toolkit component: see its [Python documentation](https://wildmeshing.github.io/wildmeshing-toolkit/python-api/).
+
 [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wildmeshing/badges/downloads.svg)](https://anaconda.org/conda-forge/wildmeshing)
 [![Anaconda-Server Badge](https://anaconda.org/conda-forge/wildmeshing/badges/installer/conda.svg)](https://conda.anaconda.org/conda-forge)
 
