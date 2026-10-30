@@ -1,5 +1,9 @@
 name: Build Website
 
+# https://wildmeshing.github.io/ redirects to the Wildmeshing Toolkit's documentation,
+# https://wildmeshing.github.io/wildmeshing-toolkit/ (built from the toolkit's own repository).
+# public/ holds the redirect pages; it is published as is to the main branch, which GitHub Pages
+# serves.
 on:
   workflow_dispatch:
   push:
@@ -15,21 +19,21 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  docs:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-        with:
-          fetch-depth: 10
 
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.11.3"
+          python-version: "3.13"
 
-      - name: Install Dependencies
-        run: pip install -r requirements.txt
-
-      - name: Deploy MkDocs
-        run: mkdocs gh-deploy --force
+      - name: Publish public/ to main
+        run: |
+          pip install ghp-import
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ghp-import --no-jekyll --push --force --branch main \
+            --message "Deploy ${GITHUB_SHA}" public

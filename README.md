@@ -1,41 +1,12 @@
 # Wildmeshing
 
-## Building
+https://wildmeshing.github.io/ redirects to the documentation of the
+[Wildmeshing Toolkit](https://github.com/wildmeshing/wildmeshing-toolkit), published at
+https://wildmeshing.github.io/wildmeshing-toolkit/ from the toolkit's own repository (`docs/`,
+`mkdocs.yml`). The toolkit replaces TetWild, fTetWild, TriWild and the wildmeshing-python
+bindings this site used to document.
 
-### Prerequisites
-
-- Python 3
-- Git
-
-### Build Steps
-
-#### 1. Clone the repository:
-
-```bash
-git clone -b doc https://github.com/wildmeshing/wildmeshing.github.io.git
-cd wildmeshing.github.io
-```
-
-#### 2. Install requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-#### 3. Preview the documentation locally:
-
-```bash
-mkdocs serve
-```
-
-or
-
-```bash
-python -m mkdocs serve
-```
-
-## The Wildmeshing Toolkit's documentation
-
-The toolkit's documentation, including the reference generated from its components'
-`*_spec.json` files, is built from the toolkit's own repository (`docs/`, `mkdocs.yml`) and
-published at https://wildmeshing.github.io/wildmeshing-toolkit/. This site links to it.
+`public/` holds the redirect pages: the home page, the old pages (`tetwild/`, `ftetwild/`,
+`triwild/`, `python/`, `wildmeshing/`) to their counterparts in the toolkit's documentation, and
+`404.html` for any other old link. A push to `doc` publishes `public/` to `main`, the branch
+GitHub Pages serves (`.github/workflows/build.yml`).
