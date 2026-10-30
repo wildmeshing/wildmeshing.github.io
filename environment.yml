@@ -1,8 +1,0 @@
-channels:
-  - conda-forge
-dependencies:
-  - numpy
-  - scipy
-  - meshplot
-  - igl
-  - wildmeshing
